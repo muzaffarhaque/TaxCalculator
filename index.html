@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tax Calculator</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-<div class="container">
-  <form id="taxForm">
-    <label for="grossIncome">Enter gross annual income</label>
+<div class="container py-5">
+  <form id="taxForm pt-5">
+    <label for="grossIncome" class="d-flex align-items-center mb-2 mt-3 gap-3">Enter gross annual income <span class="gide-quetion-mard" data-bs-toggle="tooltip" data-bs-placement="top" title="Gross annual income is your total salary in a year before any deductions">?</span></label>
     <input type="number" required id="grossIncome" placeholder="Enter gross annual income">
 
-    <label for="extraIncome">Enter extra income</label>
+    <label for="extraIncome" class="d-flex align-items-center mb-2 mt-3 gap-3">Enter extra income</label>
     <input type="number" required id="extraIncome" placeholder="Enter extra income from other sources">
 
-    <label for="ageGroup">Enter age group</label>
-    <select id="ageGroup" class="select-field" required>
+    <label for="ageGroup" class="d-flex align-items-center mb-2 mt-3 gap-3">Enter age group</label>
+    <select id="ageGroup" class="select-field mb-2 mt-3" required>
       <option value="">Select age group</option>
       <option value="<40"><40</option>
       <option value=">=40&<60">≥ 40 & < 60</option>
       <option value=">=60">≥ 60</option>
     </select>
 
-    <label for="deductions">Enter total applicable deductions</label>
+    <label for="deductions" class="d-flex align-items-center mb-2 mt-3 gap-3">Enter total applicable deductions</label>
     <input type="number" id="deductions" placeholder="Add total applicable deductions">
 
-    <button type="submit/ "  class="btn btn-primary">Submit</button>
+    <button type="submit/ "  class="btn btn-primary mt-5">Submit</button>
   
   </form>
 </div>

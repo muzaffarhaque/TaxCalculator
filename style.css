@@ -2,28 +2,29 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  input, select, button {
+}
+
+button,
+input,
+select {
     display: block;
     width: 100%;
     margin: 10px 0;
-  }
-  
-  button {
+}
+
+button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+button:hover {
     opacity: 0.8;
-  }
-  
-  .modal {
+}
+
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -35,41 +36,53 @@
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 5% auto;
     padding: 40px 25px;
     border: 1px solid #888;
     width: 50%;
-  }
-  .h-40{
+}
+.h-40 {
     height: 40px;
     padding: 6px 20px !important;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .close {
+}
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+.close:focus,
+.close:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  input,.select-field{
-    border:none;
+}
+
+.select-field,
+input {
+    border: none;
     height: 40px;
     outline: none;
     background-color: #eeeeee;
     border-bottom: 1px solid black;
     padding: 6px 10px;
-  }
+}
+
+.gide-quetion-mard {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
