@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tax Calculator</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <form id="taxForm">
+    <label for="grossIncome">Enter gross annual income</label>
+    <input type="number" required id="grossIncome" placeholder="Enter gross annual income">
+
+    <label for="extraIncome">Enter extra income</label>
+    <input type="number" required id="extraIncome" placeholder="Enter extra income from other sources">
+
+    <label for="ageGroup">Enter age group</label>
+    <select id="ageGroup" class="select-field" required>
+      <option value="">Select age group</option>
+      <option value="<40"><40</option>
+      <option value=">=40&<60">≥ 40 & < 60</option>
+      <option value=">=60">≥ 60</option>
+    </select>
+
+    <label for="deductions">Enter total applicable deductions</label>
+    <input type="number" id="deductions" placeholder="Add total applicable deductions">
+
+    <button type="submit/ "  class="btn btn-primary">Submit</button>
+  
+  </form>
+</div>
+
+<div id="resultModal" class="modal">
+  <div class="modal-content">
+  <p class="fs-3 fw-bold text-center">Your overall income will be <br/><span class="fs-5 fw-normal" id="result">0</span><br/> <span class="fw-light fs-3">after tax deductions</span> </p>
+  <div class="d-flex align-items-center justify-content-center">
+  <button id="closeBtn" class="w-auto h-40 btn-primary mx-auto">Close</button>
+</div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
